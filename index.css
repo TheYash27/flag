@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+    --white: #fff;
+    --red: #FF0002;
+}
+
+.flag {
+  width: 100vw;
+  height: 100vh; /* Adjust this based on the desired aspect ratio of the flag. 1:1 is recommended.*/
+  background-color: var(--red); /* Red color of the Swiss flag */
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+}
+
+.horizontal-rectangle {
+  width: 62.5%; /* 5/8 of the flag width */
+  height: 18.75%; /* 3/16 of the flag height */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+}
+
+.vertical-rectangle {
+  width: 18.75%;
+  height: 62.5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+}
+
